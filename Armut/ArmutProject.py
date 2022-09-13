@@ -61,6 +61,8 @@ def arl_recommender(rules_df, product_id, rec_count=1):
     recommendation_list = list({item for item_list in recommendation_list for item in item_list})
     return recommendation_list[:rec_count]
 
+# By using the function defined above we can easily call this function with a service input to get recommendations to
+# that service.
 
 
 
